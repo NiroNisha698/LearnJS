@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C to F</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <h2>Celcium to Fehrenheit Convertor</h2>
+
+        <div>
+            <input type="date"> </input>
+       
+
+           <input id="input" type="text" placeholder="Enter Celcius">
+        </div>
+
+        <div>
+            <button onclick="convertToF()"> Convert</button>
+        </div>
+
+        <div id="result">
+           
+        </div>
+      
+    </div>
+    
+    <script>
+        function convertToF(){
+        const celsius = Number(document.getElementById("input").value)
+
+        const calculation = (celsius * 9/5) + 32
+        
+        const result = document.getElementById("result")
+        result.innerHTML = calculation + " F"
+
+        }
+
+    </script>
+</body>
+</html>
