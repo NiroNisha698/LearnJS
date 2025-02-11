@@ -22,4 +22,48 @@ console.log(Number(a)+10)
 let message = document.getElementById("message")
 message.innerHTML = "Welcome to our website "
 
+//String
+let str1 = "Hello"
+let str2 = " World"
 
+let string = document.getElementById("stringCombo")
+string.innerHTML = str1 + str2
+
+//method 2 concat
+console.log(str1.concat(str2))
+
+//Arrays
+let cities = ["A","B","C"]
+
+let arr = [1,2,"A", "B"]
+
+//2d array
+let matrix = [[1,2,3] , [4,5,9] , [7,9,5]]
+
+///array method
+
+//add array
+cities.push("F")
+console.log("Cities", cities)
+
+//remove array
+cities.pop()
+console.log(cities.shift())
+
+//delete
+delete cities[1]
+console.log("After delete Citiess", cities)
+
+//splice
+let animal = ["S","U", "V","W","X"]
+
+console.log("Animal", animal)
+//animal.splice(1,3)
+console.log("Animal after splice", animal)
+
+animal.splice(1,0,'L')
+console.log("Animal add", animal)
+
+//slice
+animal.slice(1,3)
+console.log(animal.slice(1,3)) //return 1-2th element
