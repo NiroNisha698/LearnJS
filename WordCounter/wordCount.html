@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Word Counter</h2>
+
+        <div>
+
+            <textarea id="myTextArea" placeholder="Enter Words..."
+            rows="10", cols="50" oninput="count()"></textarea>
+       
+        </div>
+
+        <div>
+            <button id="btnCount" onclick="count()"> Count</button>
+        
+            <button  id="btnClear" onclick="clearText()"> Clear</button>
+        </div>
+
+        <div>
+
+        </div>
+        <div id="resultCount">
+            <h3></h3>
+        </div>
+
+
+    </div>
+
+    <script>
+
+        function count(){
+
+            let input = document.getElementById("myTextArea").value.trim();
+            console.log(input)
+
+            let result = document.getElementById("resultCount")
+
+            if ( input.length == 0) {
+                result.innerHTML = 0
+            } else {
+
+            let inputArr = input.split(/\s+/) //split space, new line, tab
+            result.innerHTML = inputArr.length
+            }
+        }
+
+        function clearText(){
+            document.getElementById("myTextArea").value = ""
+             document.getElementById("resultCount").innerHTML = 0
+
+            resultC.innerHTML = 0
+            console.log(resultC)
+
+        }
+        
+    </script>
+
+
+    
+</body>
+</html>    
