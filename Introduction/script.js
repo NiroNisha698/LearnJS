@@ -67,3 +67,27 @@ console.log("Animal add", animal)
 //slice
 animal.slice(1,3)
 console.log(animal.slice(1,3)) //return 1-2th element
+
+
+//Join - covert array to string
+let str = animal.join()
+console.log(str)
+
+//Split - convert string to array
+let str3 = "g,r,t,w"
+let array2 = str3.split(",")
+console.log(array2)
+
+
+//concate and spread operatoe
+let firstArr = [1,2,3]
+let secondArr = [4,5,6]
+
+let joinedArr = [firstArr,secondArr]
+console.log(joinedArr)
+
+joinedArr = firstArr.concat(secondArr)
+console.log(joinedArr)
+
+let joined = [...firstArr, ...secondArr]
+console.log(joined)
