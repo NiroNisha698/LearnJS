@@ -15,8 +15,8 @@
 // console.log("You should pay", ticket*20)
 
 
-let a = prompt("Enter a number")
-console.log(Number(a)+10)
+//let a = prompt("Enter a number")
+//console.log(Number(a)+10)
 
 //DOM
 let message = document.getElementById("message")
@@ -93,3 +93,19 @@ let joined = [...firstArr, ...secondArr]
 console.log(joined)
 
 //done
+
+//IF-Else----------------------------
+
+let pwd_correct = true
+
+if(pwd_correct)
+    console.log("Yes login")
+else
+    console.log("Wrong")
+
+// MAX two numbers - ternary operator 
+let a =20; let b =10
+let MAX
+
+MAX = a > b?a:b
+console.log('Max',MAX)
